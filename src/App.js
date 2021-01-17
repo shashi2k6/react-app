@@ -12,13 +12,16 @@ function App() {
       <li>Oculus</li>
     </ul>
     
-    <Folder/>
+    <Folder name="Desktop"/>
+    <Folder name="Application"/>
   </div>
   
   );
 }
-const Folder =()=>{
-  return <h1>Folder Content</h1>
+const Folder =(props)=>{
+  console.log(props);
+  const name = "Welcome to my desktop";
+  return <h1>{props.name}</h1>
 }
 
 
