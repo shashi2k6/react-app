@@ -23,11 +23,11 @@ function App() {
   </div>
   
   );
-}
+}   
 const Folder =(props)=>{
   console.log(props);
   const name = "Welcome to my desktop";
-  return <div>{props.name} {props.children}</div> 
+  return <div>{props.name} <div style={{ marginLeft: '18px' }}> {props.children}</div></div> 
 }
 
 
